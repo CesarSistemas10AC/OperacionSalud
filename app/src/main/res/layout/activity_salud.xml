@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtaltura"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/triaje"
+    tools:context=".Salud">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="400dp"
+        android:layout_height="398dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102">
+
+        <EditText
+            android:id="@+id/txtnombre"
+            android:layout_width="390dp"
+            android:layout_height="125dp"
+            android:ems="10"
+            android:hint="Registre su nombre y apellidos completos"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtalto"
+            android:layout_width="390dp"
+            android:layout_height="120dp"
+            android:ems="10"
+            android:hint="Registre su altura"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtpeso"
+            android:layout_width="388dp"
+            android:layout_height="131dp"
+            android:ems="10"
+            android:hint="Registre su peso"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="199dp"
+        android:layout_height="82dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.702">
+
+        <RadioButton
+            android:id="@+id/rhombre"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#F44336"
+            android:text="Varón" />
+
+        <RadioButton
+            android:id="@+id/rmujer"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#F44336"
+            android:text="Mujer" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btncalcular"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="108dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnlimpiar"
+        android:layout_width="122dp"
+        android:layout_height="51dp"
+        android:text="Limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.189" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
